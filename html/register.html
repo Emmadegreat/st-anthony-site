@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Compiled and minified CSS 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!---header-->
+    <header class="navbar">
+        <div class="logo">
+            <p>St.Anthony </p>
+        </div>
+        <div class="toggle__div">
+                <button id="menu__button" class="menu__button" onclick="navToggle()">&#9776;</button>
+        </div>
+        <navbar class="nav__bar">
+            
+            <ul class="links__bar" id="links__bar">
+                <li id="link">
+                    <a href="../index.html" class="active">Home</a>
+                </li>
+                <li id="link">
+                    <a href="./about.html">About</a>
+                </li>
+                <li id="link">
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li id="link">
+                    <a href="./register.html">New</a>
+                </li>
+            </ul>
+            
+        </navbar>
+
+    </header><br>
+
+    <!--------------main------------>
+    <main class="main__body" id="main__body">
+        <div class="form__div">
+            <h2>Membership Form</h2><br>
+            
+            <form action="#" method="" name="regform" id="regform" onsubmit="return validateForm(this)">
+                <div class="error__message" id="error__message"></div>
+                <div class="form__element">
+                    <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="Name"><br>
+                    <div class="error" id="error"></div>
+                </div>
+                <div class="form__element">
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="password"><br>
+                    <div class="erro" id="pass__error"></div>
+                </div>
+                <div class="form__element">
+                    <input 
+                    type="password" 
+                    name="conf__password" 
+                    id="conf__password" 
+                    placeholder="Password match">
+                </div>
+                <div class="form__element">
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Email">
+                </div>
+                <div class="form__element">
+                    <input 
+                    type="tel" 
+                    name="phone__number" 
+                    id="phone__number" 
+                    placeholder="Phone Number">
+                </div>
+                <div class="form__element">
+                    <input 
+                    type="text" 
+                    name="address" 
+                    id="address" 
+                    placeholder="Address">
+                </div>
+                <div class="form__element">
+                    <select name="course" id="course" type="text">
+                        <option value="">Course of study</option>
+                        <option value="EE">Electrical Engineering</option>
+                        <option value="CIVIL">Civil Engineering</option>
+                        <option value="ECE">Electronic and Computer Engineering</option>
+                        <option value="CHE">Chemical Engineering</option>
+                        <option value="MECH">Mechenical Engineering</option>
+                    </select> 
+                </div>
+                <div class="form__element">
+                    <input type="submit" name="submit" id="submit" value="Register"/>
+                </div>
+            </form>
+        </div><p id="pp"></p>
+
+        <div id="team" onmouseover="Team()" onmouseleave="Teamout()">
+            <img src="../images/image.jpg" alt="" id="img">
+            <img src="../images/swift_1st_july.png" alt="" id="img2">
+
+        </div>
+        
+    </main>
+    
+    <footer id="footer">
+                    
+    </footer>
+    
+    
+    <script defer src="../js/form.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

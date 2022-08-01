@@ -37,7 +37,7 @@ div2.setAttribute("class", "row");
 div2.setAttribute("id", "footer__bottom__row");
 const hr = document.createElement("hr");
 const p2 = document.createElement("p");
-const txt = document.createTextNode("EMFCONZULT - Copyright 2022 - All Right Reserved");
+const txt = document.createTextNode("St. Anthony Alagbado - Copyright 2022 - All Right Reserved");
 p2.appendChild(txt);
 div2.appendChild(p2);
 element.appendChild(hr);

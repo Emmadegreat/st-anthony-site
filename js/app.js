@@ -58,10 +58,10 @@ const ul = document.createElement("ul");
 ul.setAttribute("id", "social__links")
 ul.innerHTML = `
 
-<li><a href="">facebook</a></li>
-<li><a href="">twitter</a></li>
-<li><a href="">google plus</a></li>
-<li><a href="">skype</a></li>
+<li><a href="https://www.linkedin.com"><img src="../images/linkedin-icon.webp" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
+<li><a href="https://www.facebook.com"><img src="../images/facebook__icon.webp" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
+<li><a href="https://www.twitter.com"><img src="../images/twitter_icon.webp" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
+<li><a href=""></a></li>
 
 `
 const heading__1 = document.createElement("h2");
@@ -129,11 +129,11 @@ function Teamout() {
 }
 function mouseEnter() {
     document.getElementById('hero__section');
-    document.getElementById('h2').innerHTML = 'Deo Gratia!'
+    document.getElementById('h2').innerHTML = 'Padua!!!'
 }
 function mouseLeave() {
     document.getElementById('hero__section');
-    document.getElementById('h2').innerHTML = 'Lumen Christi!'
+    document.getElementById('h2').innerHTML = 'Ant ooo!'
 }
 
 

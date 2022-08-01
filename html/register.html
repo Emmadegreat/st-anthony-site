@@ -7,8 +7,9 @@
     <title>Document</title>
      <!-- Compiled and minified CSS 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/6_13_anthony.jpg">
 </head>
 <body>
     <!---header-->
@@ -24,6 +25,9 @@
             <ul class="links__bar" id="links__bar">
                 <li id="link">
                     <a href="../index.html" class="active">Home</a>
+                </li>
+                <li id="link">
+                    <a href="./blog.html">Blog</a>
                 </li>
                 <li id="link">
                     <a href="./about.html">About</a>
@@ -42,7 +46,7 @@
 
     <!--------------main------------>
     <main class="main__body" id="main__body">
-        <div class="form__div">
+        <div class="form__div" data-aos="flip-left">
             <h2>Membership Form</h2><br>
             
             <form action="#" method="" name="regform" id="regform" onsubmit="return validateForm(this)">
@@ -119,7 +123,11 @@
                     
     </footer>
     
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({duration:2000,once:false});
+    </script>
+    </script>
     <script defer src="../js/form.js"></script>
     <script src="../js/app.js"></script>
 </body>

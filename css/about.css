@@ -23,32 +23,31 @@ main{
 }
 .column1{
     grid-area: column1;
-    background-color: red;
+    /*background-color: red;*/
 }
 .column2{
     grid-area: column2;
     padding: 0.8rem;
-    background-color: yellow;
-    /*isolation: isolate;*/
+    /*background-color: yellow;
+    isolation: isolate;*/
 }
 .column3{
     grid-area: column3;
     padding: 0.8rem;
-    background-color: green;
+    /*background-color: green;*/
 }
 .column4{
-    background: blue;
+    /*background: chocolate;*/
     padding: 0.8rem;
     grid-area: column4;
     /*isolation: isolate;*/
 }
 .column5{
-    background: chocolate;
     padding: 0.8rem;
     grid-area: column5;
 }   
 .column6{
-    background: mediumspringgreen;
+    /*background: mediumspringgreen;*/
     grid-area: column6;
     padding: 0.8rem;
 }
@@ -68,12 +67,12 @@ main{
     /*background-attachment: fixed;*/
 }
 
-.container__about>div h4{
+.container__about>section h4{
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
-.container__about>div p{
+.container__about>section p{
     text-align: justify;
     line-height: 1.5rem;
 }
@@ -114,30 +113,26 @@ main{
     }
     .column1{
         grid-area: column1;
-        background-color: red;
     }
     .column2{
         grid-area: column2;
         padding: 0.8rem;
-        background-color: yellow;
     }
     .column3{
         grid-area: column3;
         padding: 0.8rem;
-        background-color: green;
     }
     .column4{
-        background: blue;
+        background: chocolate;
         padding: 0.8rem;
         grid-area: column4;
     }
     .column5{
-        background: chocolate;
         padding: 0.8rem;
         grid-area: column5;
     }   
     .column6{
-        background: mediumspringgreen;
+        /*background: mediumspringgreen;*/
         grid-area: column6;
         padding: 0.8rem;
     }

@@ -136,6 +136,9 @@ function mouseLeave() {
     document.getElementById('h2').innerHTML = 'Ant ooo!'
 }
 
+let st = 'St. Anthony of Padua, original name Fernando Martins de Bulhões, (born 1195, Lisbon, Portugal—died June 13, 1231, Arcella, Verona [Italy]; canonized 1232; feast day June 13), Franciscan friar, doctor of the church, and patron of the poor. Padua and Portugal claim him as their patron saint, and he is invoked for the return of lost property <br>&nbsp;&nbsp;&nbsp; Anthony was born into a wealthy family and was raised in the church. He joined the Augustinian canons in 1210 and probablybecame a priest. In 1220 he joined the Franciscan order, hoping to preach to the Saracens (Muslims) and <a href="../html/st-anthony.html">read more ...<a/>';
+let len = st.substr(0,641);
+document.getElementById("st__anthony").innerHTML = len;
 
 /*
 const btn = document.querySelector('#btn');

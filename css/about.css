@@ -244,6 +244,10 @@ main{
         width: 100%;
         height: 45vh;
     }
+    .column1{
+        grid-area: column1;
+        padding-top: -5rem;
+    }
     .column4{
         background: chocolate;
         /*padding: 0.8rem;

@@ -94,6 +94,7 @@ header{
 @media screen and (max-width: 768px){
     .navbar{
         padding: 0rem 4rem;
+        height: 62px;
     }
 
     .toggle__div{
@@ -597,7 +598,7 @@ body{
 /*---------------footer-------------*/
 footer{
     background: #1d3044;
-    height: 10rem;
+    height: 11rem;
     width: 100%;
     padding: 1.5rem;
 }
@@ -614,7 +615,6 @@ footer{
     text-align: center;
     height:5rem;
     color: grey;
-    
 }
 
 .column p{
@@ -781,7 +781,7 @@ form__element small{
 
     footer{
         background: #1d3044;
-        height: 23rem;
+        height: 25rem;
         width: 100%;
         padding: 1.5rem;
     }

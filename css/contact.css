@@ -46,6 +46,9 @@ main{
 .card p{
     line-height: 1.8rem;
 }
+.card>h3{
+    font-family: cursive;
+}
 
 @media screen and (max-width:768px){
     .cards__wrapper{

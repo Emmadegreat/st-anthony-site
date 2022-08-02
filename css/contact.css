@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 1rem auto;
+}
+
+.contact{
+    background-image: url('../images/church.jpg');
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}

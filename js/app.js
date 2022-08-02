@@ -9,10 +9,10 @@ navToggler.onclick = function navToggle() {
 }*/
 
 
-const inputs = document.getElementsByClassName("input");
+/*const inputs = document.getElementsByClassName("input");
   for (let i = 0; i < inputs.length; i++) {
     background = inputs[i].style.background = "red";
-}
+}*/
 
 function navToggle() {
     navbar = document.querySelector(".nav__bar");
@@ -65,7 +65,7 @@ ul.innerHTML = `
 
 `
 const heading__1 = document.createElement("h2");
-h1 = document.createTextNode("Social links");
+h1 = document.createTextNode("Social Links");
 heading__1.appendChild(h1);
 
 first__column.append(heading__1);
@@ -80,7 +80,7 @@ second__column.setAttribute("class", "column");
 second__column.setAttribute("id", "second__column");
 
 const p__2 = document.createElement("p");
-para__2 = document.createTextNode("234 Awolowo Street Ikeja Lagos");
+para__2 = document.createTextNode("20 AIT Road, Alagbado Lagos; off Kola junction Lagos Iffo express way.");
 p__2.appendChild(para__2);
 //p__2.removeChild(para__2);
 

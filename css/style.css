@@ -233,8 +233,6 @@ body{
     width: 28%;
     max-width: 300px;
     padding: 1rem;
-    /*border: 1px solid green;*/
-    /*justify-content: space-between;*/
 }
 
 .box p{
@@ -555,6 +553,7 @@ body{
     text-align: justify;
     margin: 0.8rem;
     max-width: 500px;
+    color: #000;
 }
 
 #mail h4{
@@ -567,7 +566,7 @@ body{
     font-size: 1rem;
     padding: 0rem 0.6rem;
     border-radius: 0.5rem;
-    margin-bottom: -1rem;
+    margin-bottom: 0.1rem;
 }
 
 #send{
@@ -576,8 +575,8 @@ body{
     cursor: pointer;
 }
 #send:hover{
-    background: rgb(202, 135, 11);
-    color: #1d3044;
+    background: chocolate;
+    color: #fff;
     cursor: pointer;
 }
 

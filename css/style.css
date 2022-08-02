@@ -132,13 +132,17 @@ header{
     .nav__bar ul{
         display: flex;
         flex-direction: column;
-        height: 280px;
-        margin: 0.4rem auto 0rem 0rem;
+        height: 300px;
+        margin: 0.2rem auto 0rem 0rem;
         transition: 0.5s;
         background: #1d3044;
         width: 100%;
         border-bottom: 0.3rem solid chocolate;
     }
+
+    .nav__bar ul li{
+        padding: 0.7rem;
+    } 
 
     .nav__bar ul li a{
         color: #fff;
@@ -148,6 +152,11 @@ header{
     .nav__bar ul li a:hover{
         color: rgb(202, 135, 11);
         border-bottom: 2px solid red;
+    }
+    .logo p{
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin-right: 2rem;
     }
 
 }    

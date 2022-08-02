@@ -140,6 +140,22 @@ let st = 'St. Anthony of Padua, original name Fernando Martins de Bulhões, (bor
 let len = st.substr(0,641);
 document.getElementById("st__anthony").innerHTML = len;
 
+
+function showText() {
+    let img = document.getElementById("jesus__image");
+    img.style.display = 'none';
+
+    let text = document.getElementById("details");
+    text.style.display = 'block';
+}
+
+function showImage() {
+    let img = document.getElementById("jesus__image");
+    img.style.display = 'block';
+
+    let text = document.getElementById("details");
+    text.style.display = 'none';
+}
 /*
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', (e) => {

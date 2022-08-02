@@ -95,7 +95,29 @@ main{
     position: relative;
     margin: 0.5rem;
     z-index: 1000;
+    display: non;
+    
 }
+/*#priest{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    shape-outside: circle();
+}
+#details{
+    width: 120px;
+    height: 120px;
+    /*background-color: green;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    shape-outside: circle();
+    border-radius: 50%;
+    z-index: 1000;
+    position: relative;
+    margin: 0.5rem;
+    visibility: hidden;
+}*/
 
 @media screen and (min-width:900px){
     .container__about{

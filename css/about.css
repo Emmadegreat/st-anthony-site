@@ -222,6 +222,11 @@ main{
         width: 100%;
         height: 45vh;
     }
+    .column4{
+        background: chocolate;
+        /*padding: 0.8rem;
+        grid-area: column4;*/
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -243,6 +248,9 @@ main{
         margin-top: 28px;
     
     }
+    .column4{
+        background: chocolate;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -263,5 +271,8 @@ main{
         height: 35vh;
         margin-top: 28px;
     
+    }
+    .column4{
+        background: chocolate;
     }
 }

@@ -4,14 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head> <p id="p">we are at google<a href="https://www.google.com">google</a></p>
+    <title>Blog Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="../images/6_13_anthony.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
 <body>
-    <h1>Blog page</h1><p id="pp"></p>
-    <script> 
+    <!---header-->
+    <header class="navbar">
+        <div class="logo">
+            <p>St.Anthony </p>
+        </div>
+        <div class="toggle__div">
+                <button id="menu__button" class="menu__button" onclick="navToggle()">&#9776;</button>
+                </div>
+        <navbar class="nav__bar">
+            
+            <ul class="links__bar" id="links__bar">
+                <li id="link">
+                    <a href="../index.html" class="active">Home</a>
+                </li>
+                <li id="link">
+                    <a href="#">Blog</a>
+                </li>
+                <li id="link">
+                    <a href="./about.html">About</a>
+                </li>
+                <li id="link">
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li id="link">
+                    <a href="./register.html">New</a>
+                </li>
+            </ul>
+            
+        </navbar>
+
+    </header><br>
+    
+    <main style="margin:20rem 2rem">
+        <h1>
+            <h1>Blog page</h1><p id="pp"></p>
+
+            welcome to our blog page. Kindly bear with us, this page is still under maintenance. We will get back soon.
+        
+        </h1>
+    </main>
+
+        <script> 
         let a = document.getElementById('p').innerHTML;
         let b = a.substr(16,43);
         document.getElementById('pp').innerHTML = b;
     </script>
+    <footer id="footer">
+                    
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 2000,
+        //once:false
+    });
+    </script>
+    <script src=""></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

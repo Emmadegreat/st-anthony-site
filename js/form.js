@@ -4,7 +4,7 @@ function validateForm(e) {
     let email = document.getElementById("email").value;
     let phone__number = document.getElementById("phone__number").value;
     let address = document.getElementById("address").value;
-    let course = document.getElementById("course").value;
+    let organization = document.getElementById("organization").value;
     //let namereg =  ; // /^[A-Za-z]*\s{1}[A-Za-z]*&/; // /^[a-zA-Z0-9\-]+$/;
     let error__message = document.getElementById('error__message');
     let text;
@@ -93,8 +93,8 @@ function validateForm(e) {
     }
 
     
-    if (course === '') {
-        text = 'Course field is required.';
+    if (organization === '') {
+        text = 'Organization field is required.';
         error__message.innerHTML = text;
         e.cancelBubble = true;
         return false;

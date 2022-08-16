@@ -13,11 +13,20 @@ navToggler.onclick = function navToggle() {
   for (let i = 0; i < inputs.length; i++) {
     background = inputs[i].style.background = "red";
 }*/
+const links = document.querySelectorAll('.link');
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        /*links.forEach(link => link.classList.remove('active'));*/
+        link.classList.add('active');
+    })
+});
 
 function navToggle() {
     navbar = document.querySelector(".nav__bar");
     navbar.classList.toggle("active");
 }
+
+
 
 const div = document.createElement("div");
 const p = document.createElement("p");
@@ -136,8 +145,9 @@ function mouseLeave() {
     document.getElementById('h2').innerHTML = 'Ant ooo!'
 }
 
-let st = 'St. Anthony of Padua, original name Fernando Martins de Bulhões, (born 1195, Lisbon, Portugal—died June 13, 1231, Arcella, Verona [Italy]; canonized 1232; feast day June 13), Franciscan friar, doctor of the church, and patron of the poor. Padua and Portugal claim him as their patron saint, and he is invoked for the return of lost property <br>&nbsp;&nbsp;&nbsp; Anthony was born into a wealthy family and was raised in the church. He joined the Augustinian canons in 1210 and probablybecame a priest. In 1220 he joined the Franciscan order, hoping to preach to the Saracens (Muslims) and <a href="../html/st-anthony.html">read more ...<a/>';
-let len = st.substr(0,641);
+//st-anthony page
+let st = 'St. Anthony of Padua, original name Fernando Martins de Bulhões, (born 1195, Lisbon, Portugal—died June 13, 1231, Arcella, Verona [Italy]; canonized 1232; feast day June 13), Franciscan friar, doctor of the church, and patron of the poor. Padua and Portugal claim him as their patron saint, and he is invoked for the return of lost property <br>&nbsp;&nbsp;&nbsp; Anthony was born into a wealthy family and was raised in the church. He joined the Augustinian canons in 1210 and probablybecame a priest. In 1220 he joined the Franciscan order, hoping to preach to the Saracens (Muslims) and <a href="../html/st-anthony.html" targert="_blank">read more ...<a/>';
+let len = st.substr(0,657);
 document.getElementById("st__anthony").innerHTML = len;
 
 

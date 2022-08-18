@@ -55,6 +55,29 @@ const toggleParagraph = () => {
             }
         })
     });
+
+    /*const blogs = document.querySelectorAll('.blog-box');
+    blogs.forEach(blog => {
+        const read_more = blog.querySelector('.read-more');
+        const p = blog.querySelector('p');
+        read_more.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            if (read_more.textContent == 'read-more') {
+                read_more.textContent = 'intro...';
+            } else {
+                read_more = 'read-more';
+            }
+
+            const blog_height = getComputedStyle(p).getPropertyValue('max-Height');
+            if (blog_height == '70px') {
+                TweenMax.fromTo(p, 0.2, { maxHeight: '70px', y:100 }, { maxHeight: '100%', y:0 });
+            }
+            if (blog_height == '100%') {
+                TweenMax.fromTo(p, 0.2, { maxHeight: '100%', y:-100 }, { maxHeight: '70px', y:0 });
+            }
+
+       }) 
+    });*/
 }
 
 toggleParagraph();
@@ -73,3 +96,4 @@ const toggleIcon = () => {
 }
 
 toggleIcon();
+

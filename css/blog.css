@@ -21,17 +21,17 @@ h2{
     width: 100px;
     height: auto;
 }
-.blogs-wrapper{
+.wrapper{
     display: flex;
     justify-content: space-around;
     /*align-items: center; ===this will make the text to have different alignment at the top*/
     text-align: justify;
 }
-.blog-box{
+.blog{
     flex-basis: 30%;
     padding: 0.5rem;
 }
-/*.blog-box article p{
+/*.blog article p{
     margin: 0.6rem 0rem;
     line-height: 1.6;
     max-height: 80px;
@@ -40,18 +40,18 @@ h2{
     -webkit-transition: max-height 0.5s ease;
     transition: max-height 0.5s ease;
 }
-.blog-box article p.show-all{
+.blog article p.show-all{
     max-height: 100%;
 }
-.blog-box article a{
+.blog .read-more{
     text-decoration: none;
     color: chocolate;
 }
-.blog-box article a:hover{
+.blog article .read-more:hover{
     border-bottom: 2px solid #e82921;
 }
 @media screen and (max-width:900px){
-    .blogs-wrapper{
+    .wrapper{
         display: flexbox;
         flex-direction: column;
         justify-content: space-around;

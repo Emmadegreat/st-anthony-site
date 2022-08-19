@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 h2{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 .blog-main{
     margin: 2rem 0rem;
@@ -31,17 +31,20 @@ h2{
     flex-basis: 30%;
     padding: 0.5rem;
 }
-.blog article p{
+.blog p{
     margin: 0.6rem 0rem;
     line-height: 1.6;
-    max-height: 80px;
-    font-size: 1rem;
+    max-height: 80px !important;
+    font-size: 0.8rem;
     overflow: hidden;
     -webkit-transition: max-height 0.5s ease;
     transition: max-height 0.5s ease;
 }
-.blog article p.show-all{
-    max-height: 100%;
+.blog p.show_all{
+    max-height: 100% !important;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease
 }
 .blog .read-more{
     text-decoration: none;

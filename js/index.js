@@ -42,10 +42,10 @@ const toggleParagraph = () => {
             e.preventDefault();
             const height_1 = getComputedStyle(pa).getPropertyValue('max-Height');
             if (height_1 == '50px') {
-                TweenMax.fromTo(pa, 0.5, { maxHeight: '50px', y: 100 }, { maxHeight: '100%', y: 0, yoyo: true });
+                TweenMax.fromTo(pa, 0.2, { maxHeight: '50px', y: 100 }, { maxHeight: '100%', y: 0, yoyo: true });
             }
             if (height_1 == '100%') {
-                TweenMax.fromTo(pa, 0.3, { maxHeight: '100%', y: -100 }, { maxHeight: '50px', y: 0, yoyo: true });
+                TweenMax.fromTo(pa, 0.1, { maxHeight: '100%', y: -100 }, { maxHeight: '50px', y: 0, yoyo: true });
             }
 
             if (button.textContent == 'See more...') {
@@ -56,28 +56,27 @@ const toggleParagraph = () => {
         })
     });
 
-    /*const blogs = document.querySelectorAll('.blog-box');
-    blogs.forEach(blog => {
-        const read_more = blog.querySelector('.read-more');
-        const p = blog.querySelector('p');
-        read_more.addEventListener('click', (e) => {
-            e.preventDefault(); 
-            if (read_more.textContent == 'read-more') {
-                read_more.textContent = 'intro...';
+    const container__1 = document.querySelectorAll('.colu');
+    container__1.forEach(colu => {
+        const button = colu.querySelector('.more');
+        const paa = colu.querySelector('p');
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const height_2 = getComputedStyle(paa).getPropertyValue('max-Height');
+            if (height_2 == '50px') {
+                TweenMax.fromTo(paa, 0.2, { maxHeight: '50px', y: 100 }, { maxHeight: '100%', y: 0, yoyo: true });
+            }
+            if (height_2 == '100%') {
+                TweenMax.fromTo(paa, 0.1, { maxHeight: '100%', y: -100 }, { maxHeight: '50px', y: 0, yoyo: true });
+            }
+
+            if (button.textContent == 'See more...') {
+                button.textContent = 'See less...';
             } else {
-                read_more = 'read-more';
+                button.textContent = 'see more...';
             }
-
-            const blog_height = getComputedStyle(p).getPropertyValue('max-Height');
-            if (blog_height == '70px') {
-                TweenMax.fromTo(p, 0.2, { maxHeight: '70px', y:100 }, { maxHeight: '100%', y:0 });
-            }
-            if (blog_height == '100%') {
-                TweenMax.fromTo(p, 0.2, { maxHeight: '100%', y:-100 }, { maxHeight: '70px', y:0 });
-            }
-
-       }) 
-    });*/
+        })
+    });
 }
 
 toggleParagraph();

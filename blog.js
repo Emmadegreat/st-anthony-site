@@ -1,4 +1,4 @@
-TweenMax.defaultEase = Expo.easeOut;
+TweenLite.defaultEase = Expo.easeOut;
 const toggleBlog = () =>{
 
     const blogs = document.querySelectorAll('.blog');
@@ -17,10 +17,10 @@ const toggleBlog = () =>{
 
             const h = getComputedStyle(par).getPropertyValue('max-Height');
             if (h == '50px') {
-                TweenMax.fromTo(par, 0.2,  {maxHeight: '50px', y: 100 }, {maxHeight: '100%', y:0});
+                TweenMax.fromTo(par, 5, {maxHeight:'50px', opacity:0.8, y: 100 }, {maxHeight:'100%', opacity:1, y:0});
             }
             if (h == '100%') {
-                TweenMax.fromTo(par, 0.2, {maxHeight: '100%', y: -100 }, {maxHeight: '50px', y:0});
+                TweenMax.fromTo(par, 2, {maxHeight:'100%', opacity:0.8, y: -100 }, {maxHeight:'50px', opacity:1, y:0});
             }
             if (btn.getAttribute('aria-expanded') === 'true') {
                 btn.setAttribute('aria-expanded', false);

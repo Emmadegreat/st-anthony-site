@@ -31,23 +31,22 @@ bannar img{
     flex-basis: 30%;
     padding: 0.5rem;
     border: 2px solid green;
-    z-index: 1000px;
+    
 }
 .blog p{
+    z-index: 1000px;
     margin: 0.6rem 0rem;
     line-height: 1.6;
     max-height: 50px !important;
     font-size: 0.8rem;
     overflow: hidden;
     border: 2px solid red;
-    -webkit-transition: max-height 25s ease;
-    transition: max-height 25s ease;
+    
 }
 .blog p.show_all{
     max-height: 100% !important;
     overflow: hidden;
-   -webkit-transition: max-height 25s ease;
-    transition: max-height 25s ease
+   
 }
 .blog .read-more{
     text-decoration: none;

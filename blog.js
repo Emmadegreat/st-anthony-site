@@ -1,29 +1,37 @@
-TweenLite.defaultEase = Expo.easeOut;
-const Blog = () =>{
+TweenMax.defaultEase = Expo.easeOut;
+const toggleBlog = () =>{
 
     const blogs = document.querySelectorAll('.blog');
     blogs.forEach(blog => {
         const btn = blog.querySelector('.read-more');
-        const pa = blog.querySelector('p');
+        const par = blog.querySelector('p');
         
         btn.addEventListener('click', (e)=>{
             e.preventDefault();
+            
             if (btn.textContent === 'read more') {
                 btn.textContent = 'intro...';
             } else {
                 btn.textContent = 'read more'
             }
-            
-            const h = getComputedStyle(pa).getPropertyValue('max-Height');
-            if (h == '80px') {
-                TweenMax.fromTo(pa, 0.2, {maxHeight: '80px', y: 100 }, {maxHeight: '100%', y:0});
+
+            const h = getComputedStyle(par).getPropertyValue('max-Height');
+            if (h == '50px') {
+                TweenMax.fromTo(par, 0.2,  {maxHeight: '50px', y: 100 }, {maxHeight: '100%', y:0});
             }
             if (h == '100%') {
-                TweenMax.fromTo(pa, 0.2, {maxHeight: '100%', y: -100 }, {maxHeight: '80px', y:0});
+                TweenMax.fromTo(par, 0.2, {maxHeight: '100%', y: -100 }, {maxHeight: '50px', y:0});
             }
+            if (btn.getAttribute('aria-expanded') === 'true') {
+                btn.setAttribute('aria-expanded', false);
+            } else {
+                setAttribute('aria-expanded', true);
+            }
+
+            
 
             
         });
     });
 }
-Blog();
+toggleBlog();

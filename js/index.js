@@ -42,10 +42,10 @@ const toggleParagraph = () => {
             e.preventDefault();
             const height_1 = getComputedStyle(pa).getPropertyValue('max-Height');
             if (height_1 == '50px') {
-                TweenMax.fromTo(pa, 0.2, { maxHeight: '50px', y: 100 }, { maxHeight: '100%', y: 0, yoyo: true });
+                TweenMax.fromTo(pa, 0.5, { maxHeight: '50px', y: 100 }, { maxHeight: '100%', y: 0, yoyo: true });
             }
             if (height_1 == '100%') {
-                TweenMax.fromTo(pa, 0.1, { maxHeight: '100%', y: -100 }, { maxHeight: '50px', y: 0, yoyo: true });
+                TweenMax.fromTo(pa, 0.3, { maxHeight: '100%', y: -100 }, { maxHeight: '50px', y: 0, yoyo: true });
             }
 
             if (button.textContent == 'See more...') {

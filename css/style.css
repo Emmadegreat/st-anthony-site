@@ -66,11 +66,6 @@ header{
     border-bottom: 2px solid #e82921;
 }
 
-.active{
-    color: chocolate;
-    border-bottom: 2px solid #e82921;
-}
-
 .toggle__div{
     width: 3rem;
     height: 2.5rem;
@@ -159,10 +154,6 @@ header{
     }
 }    
 
-body{
-    height: ;
-}
-
 /*============================hero section===========================*/
 
 #hero__section{
@@ -215,7 +206,6 @@ body{
 #events__container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     text-align: justify;
     clear: both;
     background: ;
@@ -231,12 +221,12 @@ body{
 .box p{
     margin-bottom: 0.6rem;
     padding: 0.3rem;
-    /*height: 20rem;*/
     border: 1px solid rd;
-    line-height: 1.5;
-    max-height: 70px;
+    line-height: 1.6;
+    max-height: 65px;
     width: 100%;
     overflow: hidden;
+    font-size: 1rem;
     -webkit-transition: max-height 0.5s ease;
     transition: max-height 0.5s ease;    
 }
@@ -348,11 +338,8 @@ body{
         border: 1px solid gren;
     }
    
-}
+}/*=================================events__section ends===============================*/
 
-
-
-/*=================================events__section ends===============================*/
 /*-------------------grid----------------------*/
 .container{
     display: grid;
@@ -405,7 +392,8 @@ body{
 }
 .org__article p{
     margin-bottom: 0.6rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
     max-height: 50px;
     width: 100%;
     overflow: hidden;
@@ -445,7 +433,6 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: #1d3044;
     font-size: 1.8rem;
 }
@@ -613,20 +600,20 @@ footer hr{
 }
 
 .column h2,h3{
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
+    font-family: cursive;
 }
 
 #first__column ul li{
     list-style-type: none;
     display: inline-block;
-    
 }
 
 #first__column ul li a{
     text-decoration: none;
     color: grey;
-    font-size: 1rem;
+    font-size: 0.7rem;
     cursor: pointer;
     text-transform: capitalize;
     padding: 0rem 0.3rem;
@@ -640,11 +627,16 @@ footer hr{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-top: 0.6rem;
+}
+#footer__bottom__row>p{
     text-align: center;
     color: grey;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.6rem;
+    font-family: sans-serif;
+    font-weight: 500;
 }
 /*===============Footer end==================*/
 

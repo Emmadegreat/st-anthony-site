@@ -18,12 +18,12 @@ const toggleParagraph = () => {
             }
 
             const height = getComputedStyle(para).getPropertyValue('max-Height');
-            if (height == "70px") {
-                TweenMax.fromTo(para, 0.2, { maxHeight:"70px", opacity:0.8, y:100}, {maxHeight:'100%', opacity:1, y:0, yoyo:true});
+            if (height == "65px") {
+                TweenMax.fromTo(para, 0.2, { maxHeight:"65px", opacity:0.8, y:100}, {maxHeight:'100%', opacity:1, y:0, yoyo:true});
             }
 
             if (height == "100%") {
-                TweenMax.fromTo(para, 0.1, { maxHeight:"100%", opacity:0.8, y:-100}, {maxHeight:'70px', opacity:1, y:0, yoyo:true});
+                TweenMax.fromTo(para, 0.1, { maxHeight:"100%", opacity:0.8, y:-100}, {maxHeight:'65px', opacity:1, y:0, yoyo:true});
             }
             if (btn.getAttribute('aria-expanded') === 'true') {
                 btn.setAttribute('aria-expanded', false);
@@ -70,10 +70,10 @@ const toggleParagraph = () => {
                 TweenMax.fromTo(paa, 0.1, { maxHeight: '100%', y: -100 }, { maxHeight: '50px', y: 0, yoyo: true });
             }
 
-            if (button.textContent == 'See more...') {
-                button.textContent = 'See less...';
+            if (button.textContent == 'read more...') {
+                button.textContent = 'read less...';
             } else {
-                button.textContent = 'see more...';
+                button.textContent = 'read more...';
             }
         })
     });
@@ -96,3 +96,18 @@ const toggleIcon = () => {
 
 toggleIcon();
 
+const toggleImg=()=>{
+    const images = document.querySelectorAll('.img');
+    images.forEach(img => {
+        img.addEventListener('mouseover',(e)=>{
+            e.preventDefault();
+            TweenLite.to(img, 0.3, {rotation: '180'});
+        })
+
+        img.addEventListener('mouseout',(e)=>{
+            e.preventDefault();
+            TweenLite.to(img, 0.3, {rotation: '-180'});
+        })
+    });
+}
+toggleImg();

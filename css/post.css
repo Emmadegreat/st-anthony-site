@@ -5,10 +5,9 @@
     font-family: sans-serif;
 }
 h2{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 main{
-    height: 100vh;
     margin: 2rem 0rem;
     padding: 1.5rem;
     
@@ -23,37 +22,43 @@ main{
 .colu{
     flex-basis: 30%;
     padding: 0.5rem;
-    border: 2px solid green;
-    
+}
+.colu>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 30%;
+    margin-top: 0.5rem;
 }
 .colu>p{
-    margin-bottom: 0.6rem;
-    line-height: 1.5rem;
+    margin: 0.6rem 0rem;
+    line-height: 1.6rem;
     max-height: 50px;
     width: 100%;
     overflow: hidden;
     -webkit-transition: max-height 0.5s ease;
     transition: max-height 0.5s ease;
-    
+    font-size: 1rem;
 }
-.colu>p.show_all{
+.colu>p.show__full{
     max-height: 100%;
-    /*overflow: hidden;
+    overflow: hidden;
     -webkit-transition: max-height 0.5s ease;
-    transition: max-height 0.5s ease;*/
+    transition: max-height 0.5s ease;
    
 }
 .colu>.more{
     margin-left: 0.3rem;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #1d3044;
+    color: chocolate;
     border-radius: 0.5rem;
     padding: 0.3rem 0.6rem;
 }
 .colu>.more:hover{
-    background: #fff;
-    color: chocolate;
+    background: #1d3044;
+    border-bottom: 2px solid #e82921;
     width: 150px;
     height: 20rem;
     transition: all 0.5s ease-out;

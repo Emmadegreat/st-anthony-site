@@ -1,18 +1,4 @@
 
-// initializing the aos animation.
-
-/*navToggler = document.querySelector(".menu__button");
-navToggler.onclick = function navToggle() {
-    navbar = document.querySelector(".nav__bar");
-    navbar.classList.toggle("active");
-    
-}*/
-
-
-/*const inputs = document.getElementsByClassName("input");
-  for (let i = 0; i < inputs.length; i++) {
-    background = inputs[i].style.background = "red";
-}*/
 const links = document.querySelectorAll('.link');
 links.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -136,14 +122,7 @@ function Teamout() {
     team1 = document.getElementById("img2");
     team1.style.display = 'none';
 }
-function mouseEnter() {
-    document.getElementById('hero__section');
-    document.getElementById('h2').innerHTML = 'Padua!!!'
-}
-function mouseLeave() {
-    document.getElementById('hero__section');
-    document.getElementById('h2').innerHTML = 'Ant ooo!'
-}
+
 
 //st-anthony page
 let st = 'St. Anthony of Padua, original name Fernando Martins de Bulhões, (born 1195, Lisbon, Portugal—died June 13, 1231, Arcella, Verona [Italy]; canonized 1232; feast day June 13), Franciscan friar, doctor of the church, and patron of the poor. Padua and Portugal claim him as their patron saint, and he is invoked for the return of lost property <br>&nbsp;&nbsp;&nbsp; Anthony was born into a wealthy family and was raised in the church. He joined the Augustinian canons in 1210 and probablybecame a priest. In 1220 he joined the Franciscan order, hoping to preach to the Saracens (Muslims) and <a href="../html/st-anthony.html" targert="_blank">read more ...<a/>';
@@ -178,43 +157,6 @@ btn.addEventListener('click', (e) => {
 
 })
 */
-
-
-
-
-
-
-/*const cc = document.getElementById('btn');
-cc.addEventListner('click', (e) => {
-    e.preventDefault();
-
-    if (cc.getAttribute('aria-expanded') === 'true') {
-        cc.setAttribute('aria-expanded', false);
-    } else {
-        cc.setAttribute('aria-expanded', true);
-    }
-});
-
-const toggleButton = () => {
-    if (cc.textContent === 'readmore') {
-        cc.textContent = 'readless';
-    } else {
-        cc.textContent = 'readmore';
-    }
-}
-function Read() {
-    if (cc.textContent === 'readmore') {
-        cc.textContent = 'readless';
-    } else {
-        cc.textContent = 'readmore';
-    }
-}*/
-
-    
-    
-
-
-
 
 //registration form page validation
 /*
@@ -261,47 +203,19 @@ function onError(input, message) {
 }
 
 
-TweenLite.defaultEase = Expo.easeOut;
-class Event__section{
-    constructor(domEL){
-        this.element = (domEL)
-        this.toggleParagraph()
-        this.animateBtn()
-        this.animateIcon()
-    }
-    toggleParagraph=()=> {
-        const boxes = this.element.querySelector('.box');
-        boxes.forEach(box => {
-            const para = box.querySelector('p');
-            const btn = box.querySelector('.readmore');
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const height = getComputedStyle(para).getPropertyValue('max-height');
-                if (height == '100px') {
-                    TweenMax.fromTo(para, 0.2, { maxHeight: '100px', opacity: 0.5, y: 100 }, { maxHeight: '100%', opacity: 1, y: 0, yoyo: true });
-                }
-                if (height == '100%') {
-                    TweenMax.fromTo(para, 0.2, { maxHeight: '100%', opacity: 0.5, y: -100 }, { maxHeight: '100px', opacity: 1, y: 0, yoyo: true });
-                }
-                this.toggleText(btn);
+// initializing the aos animation.
 
-                if (btn.getAttribute('aria-expanded') === 'true') {
-                    btn.setAttribute('aria-expanded', false);
-                } else {
-                    setAttribute('aria-expanded', true);
-                }
-            })
-        })
-    }
-
-    toggleText=(btn) => {
-        if (btn.textContent === 'readmore') {
-            btn.textContent = 'readless';
-        } else {
-            btn.textContent = 'readmore';
-        }
-    }
+/*navToggler = document.querySelector(".menu__button");
+navToggler.onclick = function navToggle() {
+    navbar = document.querySelector(".nav__bar");
+    navbar.classList.toggle("active");
+    
 }
 
 
-*/
+const inputs = document.getElementsByClassName("input");
+  for (let i = 0; i < inputs.length; i++) {
+    background = inputs[i].style.background = "red";
+}*/
+
+

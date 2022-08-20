@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 main{
-    /*background-color: chocolate;*/         
+    font-size: 1rem;
+    line-height: 1.6;     
 }
 .container__about{
     display: grid;
@@ -28,26 +30,29 @@ main{
 .column2{
     grid-area: column2;
     padding: 0.8rem;
-    /*background-color: yellow;
-    isolation: isolate;*/
+    font-size: 1rem;
+    line-height: 1.6;
 }
 .column3{
     grid-area: column3;
     padding: 0.8rem;
-    /*background-color: green;*/
+    font-size: 1rem;
+    line-height: 1.6;
 }
 .column4{
-    /*background: chocolate;*/
     padding: 0.8rem;
     grid-area: column4;
-    /*isolation: isolate;*/
+    font-size: 1rem;
+    line-height: 1.6;
+    
 }
 .column5{
     padding: 0.8rem;
     grid-area: column5;
+    font-size: 1rem;
+    line-height: 1.6;
 }   
 .column6{
-    /*background: mediumspringgreen;*/
     grid-area: column6;
     padding: 0.8rem;
 }
@@ -74,7 +79,8 @@ main{
 
 .container__about>section p{
     text-align: justify;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 .column2 #st-anthony, .column4 #jesus__image{
     width: 120px;

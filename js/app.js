@@ -2,7 +2,7 @@
 const links = document.querySelectorAll('.link');
 links.forEach(link => {
     link.addEventListener('click', (e) => {
-        /*links.forEach(link => link.classList.remove('active'));*/
+        links.forEach(link => link.classList.remove('active'));
         link.classList.add('active');
     })
 });
@@ -60,7 +60,7 @@ ul.innerHTML = `
 
 `
 const heading__1 = document.createElement("h2");
-h1 = document.createTextNode("Social Links");
+h1 = document.createTextNode("Follow us");
 heading__1.appendChild(h1);
 
 first__column.append(heading__1);

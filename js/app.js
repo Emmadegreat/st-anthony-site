@@ -53,9 +53,9 @@ const ul = document.createElement("ul");
 ul.setAttribute("id", "social__links")
 ul.innerHTML = `
 
-<li><a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin-icon.webp" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
-<li><a href="https://www.facebook.com" target="_blank"><img src="../images/facebook__icon.webp" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
-<li><a href="https://www.twitter.com" target="_blank"><img src="../images/twitter_icon.webp" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
+<li><a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin-icon.png" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
+<li><a href="https://www.facebook.com" target="_blank"><img src="../images/facebook-icon.png" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
+<li><a href="https://www.twitter.com" target="_blank"><img src="../images/twitter-icon-1.png" alt="" style="width:25px;height:25px;border-radius:50%"></a></li>
 <li><a href=""></a></li>
 
 `

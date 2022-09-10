@@ -27,7 +27,7 @@ html{
     font-size: 1rem;
     border-bottom: 2px solid chocolate;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position:fixed;
     z-index: 2000;
@@ -90,8 +90,10 @@ html{
 
 @media screen and (max-width: 768px){
     .header{
-        padding: 0rem 4rem;
+        padding: 0rem 1rem;
         height: 62px;
+        display: flex;
+        flex-direction: row;
     }
 
     .toggle__div{
@@ -100,13 +102,12 @@ html{
         /*border: 1px solid green;*/
         width: 3rem;
         height: 2.5rem;
-        margin: auto;
+
     }
     .menu__button{
         width: 3rem;
         text-align: center;
         height: 2.5rem;
-        margin: auto;
         font-size: 1.4rem;
         display: block;
     }
@@ -457,58 +458,48 @@ html{
     grid-area: part__3;
     padding: rem;
 }
-.bannar{
-    height: ;
-    width: ;
-}
+
 .bannar img{
     width: 100% !important;
     height: auto !important;
 }
-.part__3 .gallary{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0.5rem;
-    grid-template-areas: 
-        "image__1 image__2"
-        "image__3 image__4"
-    ;
-    /*border: 1px solid blue;*/
+
+
+@media screen and (min-width:1025px){
+    #church-2{
+        display: none;
+        width: 100% !important;
+    }
 }
-.part__3 .gallary #image__1{
-    grid-area: image__1;
-    border: 1px solid red;
+@media screen and (){
+    #church-2{
+        display: none;
+    }    
 }
-.part__3 .gallary #image__2{
-    grid-area: image__2;
-    border: 1px solid green;
-}
-.part__3 .gallary #image__3{
-    grid-area: image__3;
-    border: 1px solid rgb(68, 255, 0);
-}
-.part__3 .gallary #image__4{
-    grid-area: image__4;
-    border: 1px solid rgb(71, 64, 64);
-}
-.part__3 .gallary .image img{
-    width: 100%;
-    height: 100%;
-}
+
 @media screen and (max-width:768px) {
     .bannar img{
         width: 100% !important;
-        height: auto !important;
+        height: 100% !important;
+    }
+    #church-2{
+        display: none;
     }
 }
+@media screen and (max-width:550px) {
+    #church-2{
+        display: block;
+        height: 100px;
+    }
+}
+
 
 .part__4{
     /*border: 1px solid orange;*/
     grid-area: part__4;
     padding: 0.8rem;
 }
-.part__4 p{
+.part__4 p, b{
     line-height: 1.6;
     font-size: 1rem;
 }
@@ -718,11 +709,7 @@ input[type=submit]:hover{
     display: block;
 }
 
-form__element small{
-    position: absolute;
-    margin: 3px;
-    color: red;
-}
+
 /*========================registration form end=========================*/
 #team{
     width: 150px;
@@ -743,7 +730,7 @@ form__element small{
 @media screen and (max-width:768px) {
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.6fr 0.7fr 1fr 0.8fr 0.4fr 0.4fr;
+        grid-template-rows: 0.6fr 0.7fr 0.8fr 0.8fr 0.4fr 0.4fr;
         grid-template-areas: 
         "part__1"
         "part__2"
@@ -800,6 +787,20 @@ form__element small{
         max-height: 449px;*/
         height: 16rem;
         width: 100rem;
+    }
+}
+@media screen and (max-width:418px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 0.7fr 0.4fr 0.8fr 0.4fr 0.4fr;
+        grid-template-areas: 
+        "part__1"
+        "part__2"
+        "part__3"
+        "part__4"
+        "part__5"
+        "part__6"
+        ;
     }
 }
 

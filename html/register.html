@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="a web site for st. anthony catholic church, AIT road, Alagbado Lagos.">
     <title>St Anthony-Registration Page</title>
-     <!-- Compiled and minified CSS 
+     <!-- Compiled and minified CSS
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
@@ -15,14 +15,14 @@
 <body>
     <!---header-->
     <header class="header">
-        <div class="logo">
-            <p>St.Anthony </p>
-        </div>
+        <a href="/" class="logo">
+            St.Anthony
+        </a>
         <div class="toggle__div">
                 <button id="menu__button" class="menu__button" onclick="navToggle()">&#9776;</button>
         </div>
-        <navbar class="nav__bar">
-            
+        <nav class="nav__bar">
+
             <ul class="links__bar" id="links__bar">
                 <li>
                     <a href="../index.html" class="link">Home</a>
@@ -40,8 +40,8 @@
                     <a href="./register.html" class="link">New</a>
                 </li>
             </ul>
-            
-        </navbar>
+
+        </nav>
 
     </header><br>
 
@@ -49,51 +49,51 @@
     <main class="main__body" id="main__body">
         <div class="form__div" data-aos="flip-left">
             <h2>Membership Form</h2><br>
-            
+
             <form action="#" method="" name="regform" id="regform" onsubmit="return validateForm(this)">
                 <div class="error__message" id="error__message"></div>
                 <div class="form__element">
-                    <input 
-                    type="text" 
-                    name="name" 
-                    id="name" 
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
                     placeholder="Name"><br>
                     <div class="error" id="error"></div>
                 </div>
                 <div class="form__element">
-                    <input 
-                    type="password" 
-                    name="password" 
-                    id="password" 
+                    <input
+                    type="password"
+                    name="password"
+                    id="password"
                     placeholder="password"><br>
                     <div class="erro" id="pass__error"></div>
                 </div>
                 <div class="form__element">
-                    <input 
-                    type="password" 
-                    name="conf__password" 
-                    id="conf__password" 
+                    <input
+                    type="password"
+                    name="conf__password"
+                    id="conf__password"
                     placeholder="Password match">
                 </div>
                 <div class="form__element">
-                    <input 
-                    type="email" 
-                    name="email" 
-                    id="email" 
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
                     placeholder="Email">
                 </div>
                 <div class="form__element">
-                    <input 
-                    type="tel" 
-                    name="phone__number" 
-                    id="phone__number" 
+                    <input
+                    type="tel"
+                    name="phone__number"
+                    id="phone__number"
                     placeholder="Phone Number">
                 </div>
                 <div class="form__element">
-                    <input 
-                    type="text" 
-                    name="address" 
-                    id="address" 
+                    <input
+                    type="text"
+                    name="address"
+                    id="address"
                     placeholder="Address">
                 </div>
                 <div class="form__element">
@@ -103,7 +103,7 @@
                         <option value="CWO">CWO</option>
                         <option value="CYON">CYON</option>
                         <option value="CCM">MCA</option>
-                     </select> 
+                     </select>
                 </div>
                 <div class="form__element">
                     <input type="submit" name="submit" id="submit" value="Register"/>
@@ -116,13 +116,13 @@
             <img src="../images/swift_1st_july.png" alt="" id="img2">
 
         </div>-->
-        
+
     </main>
-    
+
     <footer id="footer">
-                    
+
     </footer>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init({duration:2000,once:false});

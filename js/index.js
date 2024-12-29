@@ -30,8 +30,8 @@ const toggleParagraph = () => {
             } else {
                 setAttribute('aria-expanded', true);
             }
-            
-        })    
+
+        })
     });
 
     const org = document.querySelectorAll('.org__article');

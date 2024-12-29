@@ -1,7 +1,7 @@
 
 const links = document.querySelectorAll('.link');
 links.forEach(link => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener('click', () => {
         links.forEach(link => link.classList.remove('active'));
         link.classList.add('active');
     })
@@ -110,7 +110,7 @@ div.append(third__column);
 function Team() {
     team = document.getElementById("img");
     team.style.display = 'none';
-    
+
     team1 = document.getElementById("img2");
     team1.style.display = 'block';
 }
@@ -209,7 +209,7 @@ function onError(input, message) {
 navToggler.onclick = function navToggle() {
     navbar = document.querySelector(".nav__bar");
     navbar.classList.toggle("active");
-    
+
 }
 
 

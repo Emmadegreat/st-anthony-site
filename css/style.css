@@ -27,20 +27,24 @@ html{
     font-size: 1rem;
     border-bottom: 2px solid chocolate;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position:fixed;
     z-index: 2000;
 }
 
-.logo p{
+.logo{
+    text-decoration: none;
+    color: chocolate;
     font-weight: 700;
     font-size: 1.5rem;
 }
 
+.logo p{
+
+}
+
 .nav__bar ul{
-    padding: 0rem 2rem;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +61,7 @@ html{
     text-decoration: none;
     cursor: pointer;
     color: #1d3044;
-    font-weight: 700;
+    font-weight: 600;
 }
 .nav__bar ul li a:hover{
     color: chocolate;
@@ -67,17 +71,9 @@ html{
     border-bottom: 2px solid #e82921;
 }
 
-.toggle__div{
-    width: 3rem;
-    height: 2.5rem;
-    margin: auto;
-    display: none;
-}
-
 .menu__button{
     width: 3rem;
     height: 2.5rem;
-    margin: auto;
     display: none;
 }
 
@@ -94,6 +90,7 @@ html{
         height: 62px;
         display: flex;
         flex-direction: row;
+        justify-content: s;
     }
 
     .toggle__div{
@@ -125,24 +122,27 @@ html{
     .nav__bar.active{
         height: 300px;
     }
-    
+
     .nav__bar ul{
         display: flex;
         flex-direction: column;
         height: 300px;
+        align-items: flex-start;
         margin: 0.2rem auto 0rem 0rem;
         transition: 0.5s;
         background: #1d3044;
         width: 100%;
+        padding-left: 10px;
         border-bottom: 0.3rem solid chocolate;
     }
 
     .nav__bar ul li{
         padding: 0.7rem;
-    } 
+    }
 
     .nav__bar ul li a{
         color: #fff;
+        font-size: 16px;
     }
 
     .nav__bar ul li a:hover{
@@ -154,7 +154,7 @@ html{
         font-size: 1.4rem;
         margin-right: 2rem;
     }
-}    
+}
 
 /*============================hero section===========================*/
 
@@ -162,7 +162,7 @@ html{
     width: 100%;
     height: 70vh;
     margin-top: 30px;
-    
+
 }
 #hero__section{
     background-image: url('../images/church.jpg');
@@ -178,7 +178,7 @@ html{
     align-items: center;
     margin: auto;
     padding: 2rem 0rem 2rem 0rem;
-    
+
 }
 
 .hero__text h2{
@@ -229,7 +229,7 @@ html{
     overflow: hidden;
     font-size: 1rem;
     -webkit-transition: max-height 0.5s ease;
-    transition: max-height 0.5s ease;    
+    transition: max-height 0.5s ease;
 }
 .box p.show__all{
     max-height: 100%;
@@ -303,7 +303,7 @@ html{
         padding: 0.5rem;
         border: 1px solid gren;
     }
-    
+
     .box p{
         margin-bottom: 0.6rem;
     }
@@ -323,7 +323,7 @@ html{
         padding: rem;
         border: 1px solid gree;
     }
-   
+
 }
 @media screen and (min-width:550px){
     #events__container{
@@ -338,7 +338,7 @@ html{
         padding: rem;
         border: 1px solid gren;
     }
-   
+
 }/*=================================events__section ends===============================*/
 
 /*-------------------grid----------------------*/
@@ -348,15 +348,15 @@ html{
     font-size: 1.3rem;
     grid-gap: 0.8rem;
     margin: 0.5rem auto;
-    grid-template-columns: repeat(4,1fr); 
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows:    1fr 1.2fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "part__1 part__1 part__1 part__1"
         "part__2 part__3 part__3 part__3"
         "part__2 part__3 part__3 part__3"
         "part__4 part__4 part__4 part__4"
         "part__6 part__6 part__6 part__5"
-        
+
     ;
 }
 .part__1{
@@ -373,7 +373,7 @@ html{
     margin: 0.8rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "cmo__article cwo__article cyon__article"
     ;
     color: #fff;
@@ -422,9 +422,9 @@ html{
     width: 150px;
     height: 20rem;
     transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;  
+    -webkit-transition: all 0.5s ease-out;
 }
-    
+
 .org i{
     color: #1d3044;
     font-size: rem;
@@ -471,11 +471,11 @@ html{
         width: 100% !important;
     }
 }
-@media screen and (){
+/* @media screen and (){
     #church-2{
         display: none;
-    }    
-}
+    }
+} */
 
 @media screen and (max-width:768px) {
     .bannar img{
@@ -511,7 +511,7 @@ html{
     /*border: 1px solid rgb(146, 21, 230);*/
     grid-area: part__5;
     padding: 1rem;
-    
+
 }
 .part__5 .donation p{
     line-height: 1.6;
@@ -731,7 +731,7 @@ input[type=submit]:hover{
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.6fr 0.7fr 0.8fr 0.8fr 0.4fr 0.4fr;
-        grid-template-areas: 
+        grid-template-areas:
         "part__1"
         "part__2"
         "part__3"
@@ -781,7 +781,7 @@ input[type=submit]:hover{
         margin: 0.5rem;
         height: 16rem;
         border: 1px solid red;
-    }   
+    }
     .part__3 .gallary .image img{
         /*max-width: 449px;
         max-height: 449px;*/
@@ -793,7 +793,7 @@ input[type=submit]:hover{
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.6fr 0.7fr 0.4fr 0.8fr 0.4fr 0.4fr;
-        grid-template-areas: 
+        grid-template-areas:
         "part__1"
         "part__2"
         "part__3"

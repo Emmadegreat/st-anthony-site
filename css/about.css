@@ -7,20 +7,20 @@
 
 main{
     font-size: 1rem;
-    line-height: 1.6;     
+    line-height: 1.6;
 }
 .container__about{
     display: grid;
     grid-gap: 0.8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.7fr 0.6fr 0.8fr 0.4fr;
-    grid-template-areas: 
+    grid-template-areas:
         "column1 column1 column1 column1"
         "column2 column2 column3 column3"
         /*"column2 column2 column3 column3"*/
         "column4 column4 column4 column4"
         "column5 column6 column6 column6"
-            
+
     ;
 }
 .column1{
@@ -44,14 +44,14 @@ main{
     grid-area: column4;
     font-size: 1rem;
     line-height: 1.6;
-    
+
 }
 .column5{
     padding: 0.8rem;
     grid-area: column5;
     font-size: 1rem;
     line-height: 1.6;
-}   
+}
 .column6{
     grid-area: column6;
     padding: 0.8rem;
@@ -102,7 +102,7 @@ main{
     margin: 0.5rem;
     z-index: 1000;
     display: non;
-    
+
 }
 /*#priest{
     width: 120px;
@@ -131,14 +131,15 @@ main{
         grid-gap: 0.8rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.7fr 0.6fr 0.8fr 0.4fr;
-        grid-template-areas: 
+        grid-template-areas:
             "column1 column1 column1 column1"
             "column2 column2 column3 column3"
             "column4 column4 column4 column4"
             "column5 column6 column6 column6"
-                
+
         ;
     }
+
     .column1{
         grid-area: column1;
     }
@@ -158,7 +159,7 @@ main{
     .column5{
         padding: 0.8rem;
         grid-area: column5;
-    }   
+    }
     .column6{
         /*background: mediumspringgreen;*/
         grid-area: column6;
@@ -169,7 +170,7 @@ main{
         width: 100%;
         height: 60vh;
 
-    
+
     }
 
     #about__hero{
@@ -216,28 +217,29 @@ main{
         grid-template-columns: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.6fr 0.6fr 0.6fr 0.3fr;
-        grid-template-areas: 
+        grid-template-areas:
             "column1 column1 column1 column1"
             "column2 column2 column3 column3"
             /*"column2 column2 column3 column3"*/
             "column4 column4 column4 column4"
             "column5 column6 column6 column6"
-                
+
         ;
     }
+
     #about__hero{
         width: 100%;
         height: 55vh;
         margin-top: 28px;
-    
+
     }
 }
 /*=========================media query===========================*/
 @media screen and (max-width:768px) {
-    .container__about{        
+    .container__about{
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.1fr 0.1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "column1"
             "column2"
             "column3"
@@ -262,10 +264,10 @@ main{
 }
 
 @media screen and (max-width:500px) {
-    .container__about{        
+    .container__about{
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 0.1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "column1"
             "column2"
             "column3"
@@ -278,7 +280,7 @@ main{
         width: 100%;
         height: 40vh;
         margin-top: 28px;
-    
+
     }
     .column4{
         background: chocolate;
@@ -286,10 +288,10 @@ main{
 }
 
 @media screen and (max-width:425px) {
-    .container__about{        
+    .container__about{
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr 0.1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "column1"
             "column2"
             "column3"
@@ -302,7 +304,7 @@ main{
         width: 100%;
         height: 35vh;
         margin-top: 28px;
-    
+
     }
     .column4{
         background: chocolate;
